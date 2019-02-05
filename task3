@@ -1,0 +1,36 @@
+package com.company;
+
+import java.net.StandardSocketOptions;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.print("Введите число: ");
+        Scanner scan = new Scanner(System.in);
+
+        int number = scan.nextInt();
+
+        if (number < 0)
+        {
+            System.out.println("Факториал не может быть отрицательным 
+числом");
+        }
+
+        else if (number == 0)
+        {
+            System.out.println("Факториал = 1");
+        }
+
+        int fact = 1;
+
+        for (int i = 1; i <= number; i++)
+        {
+            fact *= i;
+        }
+
+        System.out.println("Факториал числа " + number + " = " + fact);
+        }
+    }
+
