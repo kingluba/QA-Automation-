@@ -1,0 +1,46 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите код продукта(1 - 5): ");
+
+        int product_code = scan.nextInt();
+
+        if (product_code == 1)
+        {
+            System.out.println("Молоко, 30 грн");
+        }
+
+        else if (product_code == 2)
+        {
+            System.out.println("Бананы, 27 грн");
+        }
+
+        else if (product_code == 3)
+        {
+            System.out.println("Сосиски, 80 грн");
+        }
+
+        else if (product_code == 4)
+        {
+            System.out.println("Печенье, 25 грн");
+        }
+
+
+         else if (product_code == 5)
+        {
+            System.out.println("Яйца, 20 грн");
+        }
+
+         else {
+             System.out.println("Введен неверный код");
+        }
+
+        }
+    }
+
