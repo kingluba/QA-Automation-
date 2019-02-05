@@ -1,0 +1,43 @@
+package com.company;
+
+import java.net.StandardSocketOptions;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.print("Введите размер массива: ");
+        Scanner scan = new Scanner(System.in);
+
+        int array_length = scan.nextInt();
+        int array [] = new int [array_length];
+
+        System.out.print("Заполните массив элементами: ");
+        for (int i = 0; i < array_length; i ++)
+        {
+            array[i] = scan.nextInt();
+
+        }
+    System.out.println("Данный массив: ");
+
+        for (int i = 0; i < array_length; i++)
+        {
+            System.out.println("A[" + i + "] = " + array[i]);
+        }
+
+
+        double avg = 0;
+        double sum = 0;
+
+        for (int i = 0; i < array_length; i++)
+        {
+        sum += array[i];
+        }
+
+        avg = sum/array_length;
+
+        System.out.println("Среднее арифметическое массива = " + avg);
+        }
+    }
+
